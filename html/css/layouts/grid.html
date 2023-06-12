@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Josefin Sans", sans-serif;
+      }
+      body {
+        display: grid;
+        grid-template-areas: "header header" "main aside" "footer footer";
+        grid-template-rows: 30px 1fr 50px;
+        grid-template-columns: 1fr 200px;
+        height: 100vh;
+        margin: 0;
+      }
+      header {
+        grid-area: header;
+        background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      main {
+        grid-area: main;
+        background-color: red;
+      }
+      .p1 {
+        font-weight: bold;
+        font-variant: small-caps;
+        line-height: 2;
+      }
+      .p2 {
+        font-style: italic;
+        word-spacing: 2em;
+        text-transform: capitalize;
+      }
+      .p3 {
+        font-size: 2em;
+        letter-spacing: 8px;
+      }
+      aside {
+        grid-area: aside;
+        background-color: orangered;
+      }
+      .p4 {
+        text-decoration: underline;
+      }
+      .p5 {
+        text-decoration: overline;
+      }
+      .p6 {
+        text-decoration: line-through;
+      }
+      .wvy {
+        text-decoration: underline wavy;
+      }
+      .dtd {
+        text-decoration: underline dotted;
+      }
+      .db {
+        text-decoration: underline double;
+      }
+      .dsd {
+        text-decoration: underline dashed;
+      }
+      .p9 {
+        text-shadow: 1px 1px 2px aqua;
+      }
+      .p10 {
+        font: italic 2em/2 Arial, ;
+      }
+      footer {
+        grid-area: footer;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>Logo</div>
+      <div>Menu</div>
+    </header>
+    <main>
+      <p class="p1">
+        O "font-vriant: samll-caps;" vai deixar todas as letras do texto em
+        formato maiúsculo mas as primeiras letras vão ficar de um tamanho maior.
+        Line-Height vai definir o espaçamento entre as linhas de seu texto.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque sapiente
+        ipsum accusamus consequuntur optio impedit, molestiae perspiciatis
+        possimus tempora veniam quis velit a, totam natus autem dolore aliquam
+        maxime facilis.
+      </p>
+      <p class="p2">
+        WORD-SPACING vai definir o espaçamento entre as palavras de seu
+        parágrafo e neste caso eu declarei um espaçamento de 2em. Há também a
+        opção TEXT-TRANSFORM com diversos valores como o CAPITALIZE; para deixar
+        as primeirs letras de cada palavra em maiúsculo, UPPERCASE; para deixar
+        todas as letras em maiúsclas e o LOWERCASE; em tudo minúsculo. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam
+        adipisci laborum delectus modi quibusdam id quaerat sunt facilis
+        accusantium molestias numquam ab laboriosam, eos sequi cum doloremque ad
+        voluptate!
+      </p>
+      <p class="p3">
+        O Letter Spacing vai definir o espaçamento entre os caracteres de seu
+        parágrafo, neste caso eu defini um espaãmento entre os caracteres de
+        8px. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        animi hic odio optio consectetur quo, est perferendis aliquid error
+        placeat eos, illo necessitatibus dolorem et accusantium quidem a! Ex,
+        vero.
+      </p>
+    </main>
+    <aside>
+      <p class="p4">TEXT-DECORATION UNDERLINE</p>
+      <p class="p5">TEXT-DECORATION OVERLINE</p>
+      <p class="p6">TEXT-DECORATION LINE-THROUGH</p>
+      <p class="p7">
+        Dentro dos valores de text-decoration também é possível acrescentar mais
+        valores como o <span class="wvy">WAVY</span>,
+        <span class="dtd">DOTTED</span>, <span class="db">DOUBLE</span>,
+        <span class="dsd">DASHED</span> e SOLID
+      </p>
+      <p class="p8">
+        Uma coisa que eu não sabia era da maneira de commo justificar o
+        parágrafo com o css, basta declarar test-align: justity;.
+      </p>
+      <p class="p9">
+        Adicionando sombras em textos. Ademais é possível adicionar mais valores
+        nesta propriedade.
+      </p>
+      <p class="p10">Fazendo um shorthand.</p>
+    </aside>
+    <footer>Rodapé</footer>
+  </body>
+</html>

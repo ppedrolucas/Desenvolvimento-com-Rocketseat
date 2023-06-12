@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Complexa</title>
+  </head>
+  <body>
+    <caption>
+      Produzidos vs Vendidos por Loja
+    </caption>
+    <colgroup>
+      <col />
+      <col span="2" style="background-color: blue" />
+      <col span="2" style="background-color: red" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th rowspan="2"></th>
+        <th colspan="2" scope="colgroup">Afonso Pena</th>
+        <th colspan="2" scope="colgroup">Antônia Ferreira</th>
+      </tr>
+
+      <tr>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Vassouras:</th>
+        <th>50</th>
+        <th>60</th>
+        <th>70</th>
+        <th>80</th>
+      </tr>
+
+      <tr>
+        <th scope="row">Baldes:</th>
+        <th>15</th>
+        <th>30</th>
+        <th>45</th>
+        <th>60</th>
+      </tr>
+    </tbody>
+  </body>
+</html>

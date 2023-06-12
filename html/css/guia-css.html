@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="box-model-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Seletor em Inline, na própria linha do html tem valor de 1000-->
+    <h1 style="color: green">CSS: Cascading Style Sheet</h1>
+    <h2>Inline > Interno > Externo</h2>
+    <h3>Existe especificidade no css</h3>
+
+    <div>
+      <p class="paragrafo">
+        A última declaração do CSS é sempre a mais forte, seja no css externo ou
+        interno.
+      </p>
+      <button>
+        Se vc tiver dois links importando a folha de estilo Css, o último link
+        sempre terá mais influência.
+      </button>
+    </div>
+
+    <p id="frase">seletor de ID</p>
+
+    <p class="title" id="my-title">
+      É importante lembrar que no css, já que funciona em cascata precisa se atentar a especificidade da declaração, a última, poque a última é sempre a mais e dependendo do tipo de seletor.
+    </p>
+    <hr>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="box-model.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--O que é BOX MODEL-->
+    <p>
+      <strong>Box Model</strong> é fundamental para fazer layouts para web e ele
+      conssite em caixa 2D encima de caixas 2D.
+    </p>
+    <p>
+      As propriedades da caixa são: largura(width), altura(height),
+      conteúdo(content), bordas(border), preenchimento(padding) e espaços
+      externos(margin)
+    </p>
+    <!--BOX SIZING-->
+    <div>CSS é incrível</div>
+    <p>
+      Quando você usa "box-sizing: border-box" em um elemento HTML, o tamanho
+      total do elemento incluirá a largura e altura do conteúdo, a borda e o
+      preenchimento. Isso ajuda a garantir que as dimensões do elemento
+      permaneçam consistentes, mesmo quando você adiciona uma borda ou
+      preenchimento. Em outras palavras, é uma maneira de controlar o tamanho do
+      elemento de forma mais precisa.
+    </p>
+    <!--DISPLAY: BLOCK & INLINE-->
+    <p>
+      O display block e inline vão declarar como as caixas vão se commportar em
+      relação as outras(Comportamento Externo).<br />
+      <strong>block</strong> Vai ocupar toda a linha, empurrando sempre o
+      próximo elemento abaixo desse, width & heigth são respeitados e padding,
+      margin e border vão funcionar normalmente, alguns elementos HTML por
+      padrão já são block, mas é posssível alterar isso com "display: inline"
+      por exemplo: &lt;p&gt;, &lt;div&gt;, &lt;section&gt; e &lt;h1&gt;
+    </p>
+    <p>
+      Já o display inline vai ocupar somente o espaço total do elemento fazendo
+      com que seja possível posicionar elementos um ao lado do outro, width e
+      heigth não funcoinam e somente os valores horizontais de margin, padding e
+      border vão funcionar, ou seja, quando você declarar um "margin: 100px" o
+      elemento vai dar um espaçamento externo somente da esquerda para a direita
+      e não vai afetar a largura e altura. Exemplos de tags por padrão inline:
+      &lt;a&gt;, &lt;strong&gt;, &lt;span&gt; e &lt;em&gt;.
+    </p>
+    <section>oi</section>
+  </body>
+</html>

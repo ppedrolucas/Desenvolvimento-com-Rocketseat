@@ -1,0 +1,94 @@
+/*Seletor universal de valor 0*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+/*O importante vai ignorar todas as declarações sob este elemento e vai dizer que esta declaração não pode ser mudada por nada neste mundo, ela é boa pra usar quando for usar o bootstrap*/
+h1 {
+  border: 1px solid blue !important;
+  margin: 200px;
+  padding: 60px;
+}
+/*Para agrupar elementos basta eu colocar uma vírgula*/
+h2,
+h3 {
+  color: blue;
+}
+/*Cada tipo de seletor tem um grau de importãncia e o css faz um cálculo matemático de qual valor deve ser considerado*/
+
+/*Seletor por Elementos HTML que tem valor 1*/
+div {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+}
+
+/*Seletor por Classe que tem valor 10*/
+.paragrafo {
+  display: grid;
+  place-items: center;
+  color: purple;
+  background-color: yellow;
+}
+
+/*Seletor por ID que tem valor de 100*/
+#frase {
+  color: red;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/*Sim! eu posso somar classe + tag + ID resultando em um valor de 111*/
+p.title#my-title {
+  color: cyan;
+}
+
+/*AT-RULES*/
+@import url(); /*incluir um css externo*/
+@media screen {
+  /*responsividade*/
+}
+@font-face {
+  /*Fontes externas*/
+}
+@keyframes identifier {
+} /*Animação*/
+
+/*Shorthand, é uma ideia de junção de propriedades, para que fiquem de forma mais fácil de ler, por exemplo o meu efeito parallax. O SHORTHAND VAI SUBSCRESVER TUDO O QUE FOI ESCRITO ANTES*/
+
+/*Em vez de fazer assim: */
+/*background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/ironman.jfif);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+
+/*Posso fazer assim(A ORDEM NÃO IMPORTA):
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/ironman.jfif) cover center top no-repeat fixed;*/
+
+/* #VALORES - TODO ESTE BLOCO É RELACIONADO AOS VALORES DE MEDIDAS#
+
+Distências absolutas são medidas fixas que podem mmudar,
+Já as distâncias relativas são mais flexiveis ao tamanho da tela, do elemento raiz root/raiz ou então do elemento pai:
+
+Exemplos de distâncias absolutas: cm, in e px
+Exemplos de distâncias relativas: em, rem, vh e vw
+em: é relativo ao tamanho do elemento pai
+rem: é relativo ao tamanho do elemento raiz/root
+vh e vw: são relativos ao tamanho da tela do dispositivo em %
+
+Um caso curioso é a medida de porcentagem (%) que seu tamanho declarado será smpre relativo ao elemento pai.
+
+Exemplo: body{
+  font-size: 16;
+}
+p{
+  font-size: 50%;
+}
+Logo o tamanho da fonte será de 8px*/
+

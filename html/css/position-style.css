@@ -1,0 +1,36 @@
+/* POSITION 
+#box {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(http://source.unsplash.com/randm);
+  background-repeat: no-repeat;
+  background-position: center top;
+}*/
+
+/* FUNÇÕES
+rgb()
+url()
+calc() este vai realizar um cálculo matemático considerando o tamanho do elemento pai, por exemplo a tag BODY tem 100vh de altura e eu quero importar uma imagem que ocupe 100% deste tamanho da anterior - 100px do tamanho do elemento pai que é o BODY.
+hsl()*/
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#box {
+  height: calc(100% - 100px);
+  width: 100%;
+  background-image: url(http://source.unsplash.com/randm);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+/*Podemos adicionar Strings como valores no CSS tbm*/
+#box::after {
+  display: grid;
+  place-items: center;
+  content: "Aprendendo novas coisas com CSS da Rocketseat";
+  color: white; /*Isso aqui tbm é uma string*/
+}

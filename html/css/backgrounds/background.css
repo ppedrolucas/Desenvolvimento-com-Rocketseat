@@ -1,0 +1,19 @@
+/*
+Se eu quiser adicionar uma imagem como background de uma página web basta usar a declaração "BACKGROUND-IMAGE: URL(); e por padrão o CSS sempre vai fazer essa imagem ficar se repetindo e para reverter isso usa-se o "BACKGROUND-REPEAT: NO-REPEAT;"
+*/
+
+/*Ainda no BACKGROUND-REPEAT possuo mais alguns valores como o REPEAT-Y que vai fazer com que a imagem se repita na vertical(de cima para baixo) e REPEAT-X para se repetir na horizontal, dentre outros tem tbm: SPACE, ROUND, REPEAT*/
+
+/*Também é possível usar dois valores no BACKGROUND-REPEAT, um para o eixo Y e o outro no eixo X*/
+
+/*Além dos mais, é possível mudar a possição da imagem no background usando a declaração BACKGROUND-POSITION: ; com os valores de LEFT RIGHT TOP BOTTOM CENTER, sendo possível usar até dois valores simultâneos e se for apenas um valor o CSS vai considerar tanto o eixo X como o Y*/
+
+/*Para mudar o tamanho do background faz-se uso da declaração BACKGROUND-SIZE usando o COVER em que ele se estica para ocupar todo o espaço do elemento pai e CONTAIN para ocupar só o espaço do elemento pai mas sem se esticar. E também é possível usar valores em % px, em... */
+
+/*A propriedade BACKGROUND-ORIGIN vai definir a origem de onde a imagem vai começar: a partir da borda=BORDER-BOX, padding=PADDING-BOX e o a partir do conteúdo dps da borda=CONTENT-BOX*/
+
+/*BACKGROUN-ATTACHMENT: FIXED; vai fixar o background e o SCROLL é o padrão dela*/
+
+/*É possível adicionar gradiente no background usando o LINEAR-GRADIENT(grau°deg cores, cores, cores) ou RADIAL-GRADIENT mas sem indicar os graus da angulação*/
+
+/*Posso usar mais de um background no mesmo elemento e na mesma declaração, fazendo um simples SHORTHAND e separando os backgrounds por uma vírgula, assim eu terei dois backgrounds em um só*/

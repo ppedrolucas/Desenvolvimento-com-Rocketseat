@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <!--ACTION vai definir pra onde os dados do form vão ser enviados-->
+    <form id="formulario" action="" method="POST">
+      <!--O FIELDSET serve para agrupar campos de mesmo proósito em seu formulário, com o intuito de deixá-lo mais semântico possíel e melhorar a acessibilidade-->
+
+      <!--Existem alguns atributos especiais para colocar no formulário como o DISABLE para desabilitar todos os elementos do grupo, FORM serve para linkar este fieldset á algum formulário por meio de seu ID, logo, não é obrigatório ter o fieldset dentro do formulário e o NAME, que serve para dar um nome ao grupo-->
+      <fieldset form="formulario" name="formContato">
+        <!--LEGEND é o nome do grupo que vai aparecer no navegador-->
+        <legend>Contato</legend>
+        <!--Eu posso fazer desta maneira para fazer a conexão entre o input e o label ou então posso fazer a conexão usando o ID-->
+        <label>
+          Nome do Contato
+          <input type="text" placeholder="Preeencha com seu nome" autofocus />
+        </label>
+
+        <label for="email">Email do Contato</label>
+        <input id="email" type="email" placeholder="Digite seu E-mail" />
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Digite sua senha Sr." />
+      </fieldset>
+      <!--O AUTOFOCUS te da a possibilidade de quando vc apertar Enter, o navegador vai enviar os dados do form automáticamente-->
+      <button autofocus type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+
+    <input type="text" list="fruitlist" placeholder="Escolha" />
+    <!--DATALIST é uma lista de sugestões-->
+    <datalist id="fruitlist">
+      <option>Apple</option>
+      <option>Banana</option>
+      <option>Orangr</option>
+      <option>Mango</option>
+      <option>Cherry</option>
+    </datalist>
+
+    <input type="color" list="" />
+    <input type="color" />
+
+    <input type="color" list="colorlist" />
+    <datalist id="colorlist">
+      <option>#ff0000</option>
+      <option>#00ff00</option>
+      <option>#0000ff</option>
+    </datalist>
+
+    <select name="" id="">
+      <option>Opção A</option>
+      <option>Opção B</option>
+      <option>Opção C</option>
+    </select>
+
+    <form id="atributos" action="" method="post">
+      <fieldset form="atributos" name="formComAtributos">
+        <legend>Atributos comuns</legend>
+        <!--O AUTOCOMPLETE vai completar o campo automáticamente com o valor que você mais usa no navegador, dependendo do TYPE, se ele estiver em EMAIL então o autocomplete vai completar com o email que vc mais usa-->
+        <label>
+          E-mail
+          <input name="email1" type="email" form="atributos" autocomplete="email" />
+        </label>
+        <!--O AUTOFOCUS vai focar no primeiro input da sua página automaticamente para vc preencher, e ele só funciona no primeiro input de seu arquivo, q no meu caso é lá encima-->
+        <input
+            name="email2"
+            type="email"
+            form="atributos"
+            autocomplete="email"
+            value="Texto no E-mail"
+            readonly
+          />
+        </label>
+        <input
+            name="email3"
+            type="email"
+            form="atributos"
+            autocomplete="email"
+            value="Texto no E-mail"
+            disabeld
+          />
+        </label>
+        <!--REQUIRED é um atributo para deixar um campo X obrigatório-->
+        <input
+            type="email"
+            form="atributos"
+            autocomplete="email"
+            required
+            placeholder="digite seu E-mail"
+          />
+        </label>
+      </fieldset>
+    </form>
+    <!--INPUT DE PASSWORD-->
+    <form action="" method="post">
+      <fieldset form="atributosDoInputPassword" name="senha">
+        <legend>Input de Senha</legend>
+        <!--MINLENGTH vai definir o MÍNIMO de caracteres que sua senha deve possuir-->
+        <input type="password" minlength="4">
+        <!--MAXLENGTH vai restringir o MÁXIMO de caracteres que sua senha deverá possuir-->
+        <input type="password" maxlength="8">
+        <!--PATTERN vai regular um padrão de combinação de senhas, Exemplo: "A senha deve conter caracteres de 0-9 e a-f"-->
+        <input type="password" pattern="[0-9a-fA-F]{4,8}" title="A senha deve conter caracteres de 0-9 e a-f e mínimo de 4 caracteres e máximo de 8 caracters" minlength="4" maxlength="8">
+        <!--INPUTMODE vai alterar o uso do teclado em smartphones, por exemplo, você pode filtrar para que o cliente adicione apenas números na senha PELO SMARTPHONE-->
+        <input type="password" inputmode="numeric">
+        <!--AUTOCOMPLETE no input de password existe dois valores para este atributo, ON e OFF, ON: o navegar vai sugerir uma aleatória segura e o OFF vai desabilitar essa opção caso o browser tiver essa opção ativa por padrão-->
+        <input type="password" autocomplete="on">
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+    <!--INPUT DE E-MAIL-->
+    <form action="" method="post">
+      <fieldset>
+        <legend>Input de E-Mail</legend>
+        <input type="email" minlength="8">
+        <!--Posso usar o PATTERN para restringir qual tipo de email é aceito no input-->
+        <input type="email" pattern=".+@awp\.com\.br" title="Somente emails @awp.com.br são aceitos">
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+    <!--Input de FILES-->
+    <!--Preciso adicionar sempre em meu formulário "enctype="multipart/form-data"" para poder enviar os dados dele-->
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Input de FILES</legend>
+        <!--"image/*" aceita todo tipo de imagem-->
+        <!--posso separar os tipos de arquivos que aceito por meio de vírgulas ".png, .doc, .js, audio/*"-->
+        <input type="file" accept=".pdf">
+        <!--MULTIPLE serve para eu enviar múltiplos arquivos-->
+        <input type="file" multiple>
+        
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+    <hr>
+    <form action="" method="post">
+      <div>
+<label for="notificacao">Receber notificações</label>
+      <input type="checkbox" name="checkSubs" id="notificacao" value="aceito">
+      <!--Se nada for selecionado então nada chegará no BD quando o form for enviado-->
+      </div>
+      <div>
+<label for="notificacao">Receber notificações</label>
+      <input type="checkbox" name="checkSubs" id="notificacao" checked>
+      </div>
+      
+      <fieldset>
+
+        <legend>Checkbox de interesses</legend>
+        <!--Enviar multiplos valores, usando o msm NAME para as opções mas comm valores diferentes-->
+        <div>
+          <label for="musica">Música</label>
+          <input type="checkbox" id="musica" name="interesse" value="music">
+        </div>
+
+         <div>
+          <label for="filme">Filme</label>
+          <input type="checkbox" id="filme" name="interesse" value="movie">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Select</legend>
+        <label>Por favor escolha um  ou mais animais
+          <!--Posso usar o atributo MULTIPLE para selecionar mais de uma opção, e para selecionar basta segurar Ctrl-->
+          <select name="pets">
+            <optgroup label="Animais que andam">
+              <option value="dog">dog</option>
+              <option value="cat" disabled>cat</option>
+              <option value="horse">horse</option>
+            </optgroup>
+
+            <optgroup label="Animais que vouam">
+              <option value="parrot">parrot</option>
+              <option value="bat">bat</option>
+              <option value="falcon">falcon</option>
+            </optgroup>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+    <form action="" method="post">
+      <datalist id="searchterms">
+        <option>Windows</option>
+        <option>Mac OS</option>
+        <option>Linux</option>
+        <option>Banana</option>
+      </datalist>
+      <input type="search" name="pesquisa" list="searchterms" placeholder="Pesquise aqui..." aria-label="Campo de pesquisa">
+      <label for="">Number
+        <input type="number" step="3">
+
+      </label>
+      <button>Procurar</button>
+    </form>
+    <input type="range" min="1" max="30" step="2">
+  </body>
+</html>

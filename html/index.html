@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento HTML</title>
+  </head>
+  <!--Hierarquia de tags-->
+  <body>
+    <h1>Anatomia de um documento HTML</h1>
+    <p>
+      Preciso ter semântica ao desenvolver um documento html, ser bem
+      estruturado. Quais elementos descrevem melhor o que quero fazer? A página
+      precia ter significado. E é preciso entender a hierarquia das tags.
+    </p>
+    <h2>Nascimento</h2>
+    <h3>Infância</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, cum
+      earum! Facilis deserunt dolorem impedit?
+    </p>
+    <h3>Adolência</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime illum
+      recusandae praesentium quibusdam, porro expedita.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, sapiente
+      reiciendis, est neque numquam excepturi, dicta dolorem facere assumenda
+      minus tenetur earum delectus porro dolorum voluptatem a nulla. Aspernatur,
+      magnam. <a href="#">Saiba mais</a>
+    </p>
+    <h2>Projetos</h2>
+    <p>
+      Quanto melhor o documento for estruturado, melhor o browser vai ler e
+      recomendar para o usuário.
+    </p>
+    <hr />
+    <!--Citações-->
+    <h1>Citações</h1>
+    <p>
+      Este conceito pode ser usado quando estou escrevo sobre algum artigo em meu documento HTML e faço citação/referência de um outro autor, então, igual como funciona as regras da ABNT 2 eu dou os créditos ao criador do trecho que busquei referência. E posso fazer isso de duas maneiras, usando a tag &lt;blockquote&gt; e a tag &lt;cite&gt;.
+    </p>
+
+    <blockquote
+      cite="https://app.rocketseat.com.br/discover/course/o-guia-estelar-de-html/trabalhando-com-elementos/citacoes"
+    >
+      <strong>A tag <code>&lt;blockquote&gt;</code></strong> Indica que um texto
+      externo foi citado.
+    </blockquote>
+
+    <p>
+      De acordo com
+      <a
+        href="https://app.rocketseat.com.br/discover/course/o-guia-estelar-de-html/trabalhando-com-elementos/citacoes">
+        <cite
+          >Citação com "cite", que é 1000 vezes melhor que bLoCkQuOtE.</cite>
+      </a
+      >
+    </p>
+    <h2>Abreviações</h2>
+    <p>
+      Quando você está fazendo um texto e precisa abreviar algo e quer que a pessoa entenda o que é aquela abreviação como por exemplo: "Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para criar nossos documentos da web".
+    </p>
+    <p>
+      <h2>Detalhes de contato</h2>
+      <p>Esta tag serve para detalhar e especificar quem é o autor deste documento HTML, que no caso sou eu kkkk</p>
+      <address>
+        <p>Pedro Lucas</p>
+        <strong>Pacajus - Ce</strong>
+      </address>
+    </p>
+    <hr>
+    <!--Representar códigos-->
+    <h1>Representar um código dentro do próprio HTML</h1>
+    <p>Posso fazer utilizando a tag &lt;code &gt; para códigos genéricos e pequenos, ou então o &lt; pre &gt; para blocos de códigos mais robustos. Isso serve para manter espaços em brancos e recuos que eu colocar no código.</p>
+
+    <h2>Exemplo:</h2>
+
+    <code>
+        window.alert('usando a tag code')
+    </code>
+
+    <pre>
+      <code>
+        &lt;h1&gt;usando a tag pre + code &lt;/h1&gt;
+      </code>
+    </pre>
+    <hr>
+    <!--Links-->
+    <h1>Links</h1>
+    <h2>Atributos que podem ser inseridos na tag de link podem ser:</h2>
+    <ol>
+      <li>Globais</li>
+      <li>href
+        <ul>
+          <li>url completa</li>
+          <li>fragmento, link de âncora com a #</li>
+          <li>email, utiiazndo o "mailto:email@gmail.com" <a href="mailto:2020infor36@gmail.com" target="_blank"></a></li>
+        </ul>
+      </li>
+      <li>download="no href tem o link de uma imagem e este atributo pode ser usado par baixar a imagem e aqui é posto o valor da imagem, como vai salvar a imagem"</li>
+      <li>target = "_blank"</li>
+    </ol>
+    <ul>
+      <li><a href="aula-pratica-de-html.html" target="_blank">Aula prática de html</a></li>
+      <li><a href="anotacoes.html" target="_blank">Anotações de html</a></li>
+      <li><a href="/outros/conteudoSemNd.html" target="_blank">Conteúdo sem NADA</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #121215;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5a6169;
+}
+/*BARRA DE NAVEGAÇÃO*/
+.menu {
+  width: 100%;
+  height: 90px;
+  background-color: #fbfbfb;
+  color: #868e96;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  box-shadow: 0 2px 18px #000;
+  position: fixed;
+  top: 0;
+}
+.menu img {
+  width: 6em;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #868e96;
+}
+a:hover {
+  color: #0d6efd;
+  transition: all 0.2s ease-out;
+}
+/*BANNER*/
+.first {
+  margin-top: 90px;
+  background: #121215 url(assets/background.svg) no-repeat top right / auto 100%
+    fixed;
+  height: 100vh;
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.first .sticker {
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 800;
+  border-radius: 8px;
+  border: none;
+  color: #000;
+  background: #ffe484;
+}
+.first a {
+  color: #868e96;
+  text-decoration: none;
+}
+.first img {
+  height: auto;
+  width: 16em;
+}
+.first h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+.first h2 {
+  color: #868e96;
+  margin: 0 2em;
+}
+.first .actions a {
+  padding: 20px;
+  background: #5a616985;
+  border: 1px solid #868e96;
+  border-radius: 8px;
+  font-size: 16px;
+}
+/*HERO SECTION*/
+.hero-section {
+  background-color: #121215;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  color: #5a6169;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 2em;
+}
+.box h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+.box h2 {
+  font-size: 19px;
+}
+.hero-section .left {
+  display: grid;
+  place-items: center;
+  border-right: 1px solid #868e96;
+}
+.hero-section .right img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  font-size: 16px;
+  font-weight: 800;
+  width: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  color: rgb(255, 255, 255);
+}
+.btn:hover {
+  background: none;
+  color: #0d6efd;
+  transition: all 0.2s ease-out;
+}
+/*ABOUT*/
+
+/*SERVICES*/
